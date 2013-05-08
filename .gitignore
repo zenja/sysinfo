@@ -1,3 +1,11 @@
+# Generic files to ignore
+*~
+#*.lock
+*.DS_Store
+*.swp
+*.out
+
+# Ruby
 *.gem
 *.rbc
 .bundle
@@ -16,3 +24,8 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# Vim
+.*.sw[a-z]
+*.un~
+Session.vim

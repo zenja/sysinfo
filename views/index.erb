@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Sysinfo</title>
+  </head>
+
+  <body>
+  <%
+    @sysinfo.each do |k, v|
+      if v.instance_of?(Hash) == false
+  %>
+        <h2><%= k %>: <%= v %></h2>
+        <hr />
+  <%
+      else
+  %>
+        <h2><%= k %></h2>
+        <table>
+  <%
+        v.each do |ik, iv|
+  %>
+          <tr>
+            <td class="td-title"><%= ik %></td>
+            <td><%= iv %></td>
+          <tr>
+  <%
+        end
+  %>
+        </table>
+        <hr />
+  <%
+      end
+    end
+  %>
+  </body>
+
+</html>

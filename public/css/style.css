@@ -1,0 +1,21 @@
+h2 {
+    color: blue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.td-title {
+    font-weight: bolder;
+}
+
+hr {
+    margin: 20px 0 20px 0;
+    border: 1px dashed black;
+}
